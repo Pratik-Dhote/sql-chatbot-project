@@ -1,0 +1,18 @@
+tensorflow==2.15.0;
+scikit-learn
+tensorboard
+matplotlib
+streamlit
+pandas
+numpy
+nltk
+##  for LCEL
+langchain
+python-dotenv
+ipykernel
+langchain-community
+langchain-groq
+
+## For Chat AQL
+mysql-connector-python
+SQLAlchemy
