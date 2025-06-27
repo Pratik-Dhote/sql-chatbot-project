@@ -27,7 +27,8 @@ else:
 api_key=st.sidebar.text_input(label="Enter GROQ API key", type="password")
 
 if not api_key:
-    st.info("Please enter the GROQ API key")
+    st.warning("Please enter your Groq API key to continue.")
+    st.stop()
 
 llm=ChatGroq(api_key=api_key, model_name="Llama3-8b-8192",streaming=True)
 
