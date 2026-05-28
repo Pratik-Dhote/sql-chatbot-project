@@ -1,9 +1,9 @@
 import streamlit as st
 from langchain_community.agent_toolkits.sql.base import create_sql_agent
 from langchain_community.utilities import SQLDatabase
-from langchain.agents.agent_types import AgentType
-from langchain.agents.agent_toolkits import SQLDatabaseToolkit
-from langchain.callbacks import StreamlitCallbackHandler
+from langchain.agents import AgentType
+from langchain_community.agent_toolkits.sql.toolkit import SQLDatabaseToolkit
+from langchain_community.callbacks.streamlit import StreamlitCallbackHandler
 from sqlalchemy import create_engine
 import sqlite3
 from langchain_groq import ChatGroq
