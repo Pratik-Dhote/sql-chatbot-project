@@ -29,7 +29,7 @@ if not api_key:
     st.warning("Please enter your Groq API key to continue.")
     st.stop()
 
-llm=ChatGroq(api_key=api_key, model_name="Llama3-8b-8192",streaming=True)
+llm=ChatGroq(api_key=api_key, model_name="llama-3.1-8b-instant",streaming=True)
 
 @st.cache_resource(ttl=2)
 def configure_db(mysql_host=None,mysql_user=None,mysql_password=None,mysql_db=None):
